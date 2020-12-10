@@ -13,13 +13,17 @@
         box-sizing: border-box;
         border-radius: 0px 25px 25px 18px;
         font-family: Montserrat;
-        font-style: uppercase;
-        font-weight: 600;
+        text-transform: uppercase;
+        font-weight: 400;
         font-size: 18px;
-        color: #123D79; 
+        color: #777777; 
         line-height: 29px;
       }
-
+			
+        .options {
+         color: #123D79; 
+        }        
+        
       .container {
         padding-top:32px;
       }
@@ -40,8 +44,8 @@
 
   <body>
 
-    <select class="dropdown-menu" onchange="showDiv('teste', this)">
-      <optgroup>
+    <select id="dropdownSelector" class="dropdown-menu" onchange="setarVariavel()">
+      <optgroup class="options">
       <option value="Atendimento">Atendimento</option>
       <option value="Paramentação">Paramentação</option>
       <option value="Produção">Produção</option>
@@ -61,18 +65,29 @@
       </optgroup>
     </select>
 
+  	<button type="button" onclick="aparecerTour(valor_dropdown)">ao clicar tem que aparecer</button> -->
+    
     <div id="teste" class="container">
       <iframe src="https://www.google.com/maps/embed?pb=!4v1607543792235!6m8!1m7!1sCAoSLEFGMVFpcE9hMVQ0ZFdKdHljcmNzaC1saUQ3S2h6SUJreGR5Z29jdXQ1QTJS!2m2!1d-27.59074628776002!2d-48.61183190536636!3f17.68573548629111!4f-6.912306431014386!5f0.4000000000000002" width="1200" height="800" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <iframe src="https://www.google.com/maps/embed?pb=!4v1607543836892!6m8!1m7!1sCAoSLEFGMVFpcE9jUWJJakd3dlFoYk5Nakp0Zkk1azlaV0hWLVNlc0ZtblpMdlpp!2m2!1d-27.59072165875216!2d-48.6117156637207!3f38.6!4f-10.36!5f0.4000000000000002" width="1200" height="800" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
 
-
     <script>
-
-    function showDiv(divId, element) {
-    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+    	
+      function aparecerTour(valor) {
+        if (valor === "Atendimento") {
+    			document.getElementById("teste").style.display = 'block';
+    	}
     }
+      
+      function setarVariavel() {
+      	valor_dropdown = document.getElementById("dropdownSelector").value
+      		console.log(valor_dropdown)
+        	return valor_dropdown
+      }
+      let valor_dropdown = ""
+      
 
     </script>
 
