@@ -22,10 +22,14 @@
 			
         .options {
          color: #123D79; 
-        }        
+        }
+        
+        .options-block>div:not(.active) {
+  				display: none
+				}
         
       .container {
-        padding-top:32px;
+        padding-top: 32px;
       }
 
       #teste {
@@ -44,28 +48,39 @@
 
   <body>
 
-    <select id="dropdownSelector" class="dropdown-menu" onchange="setarVariavel()">
-      <optgroup class="options">
-      <option value="Atendimento">Atendimento</option>
-      <option value="Paramentação">Paramentação</option>
-      <option value="Produção">Produção</option>
-      <option value="Controle de Qualidade">Controle de Qualidade</option>
-      <option value="Sala de Pesagem">Sala de Pesagem</option>
-      <option value="Encapsulação">Encapsulação</option>
-      <option value="Encapsulação I">Encapsulação I</option>
-      <option value="Peso Médio">Peso Médio</option>
-      <option value="Cabines de Pressão Negativa">Cabines de Pressão Negativa</option>
-      <option value="Formas Farmacêuticas Líquidas">Formas Farmacêuticas Líquidas</option>
-      <option value="Comprimidos e Sachês">Comprimidos e Sachês</option>
-      <option value="Sala de Lavação">Sala de Lavação</option>
-      <option value="Almoxarifado e Matéria Prima">Almoxarifado e Matéria Prima</option>
-      <option value="Controle">Controle</option>
-      <option value="Supervisão Farmacêutica">Supervisão Farmacêutica</option>
-      <option value="Entrega">Entrega</option>
-      </optgroup>
-    </select>
+    <select class="dropdown-menu" onchange='changeSelectOption(this)'>
+  		<option selected value="atendimento">Atendimento</option>
+  		<option value="paramentacao">Paramentação</option>
+  		<option value="producao">Produção</option>
+  		<option value="controle-qualidade">Controle de Qualidade</option>
+  		<option value="sala-pesagem">Sala de Pesagem</option>
+  		<option value="encapsulacao">Encapsulação</option>
+  		<option value="encapsulacao_i">Encapsulação I</option>
+  		<option value="peso_medio">Peso Médio</option>
+  		<option value="cabines_pressao_negativa">Cabines de Pressão Negativa</option>
+  		<option value="formas_farmaceuticas_liquidas">Formas Farmacêuticas Líquidas</option>
+  		<option value="comprimidos_saches">Comprimidos e Sachês</option>
+  		<option value="sala_lavacao">Sala de Lavação</option>
+  		<option value="almoxarifado_materia_prima">Almoxarifado e Matéria Prima</option>
+  		<option value="controle">Controle</option>
+  		<option value="supervisao_farma">Supervisão Farmacêutica</option>
+  		<option value="entrega">Entrega</option>
+		</select>
 
-  	<button type="button" onclick="aparecerTour(valor_dropdown)">ao clicar tem que aparecer</button> -->
+    <div class="options-block">
+      <div id="atendimento" class="active">
+        <h1>atendimento</h1>
+      </div>
+      <div id="paramentacao">
+        <h1>paramentacao</h1>
+      </div>
+      <div id="producao">
+        <h1>producao</h1>
+      </div>
+      <div id="controle-qualidade">
+        <h1>controle-qualidade</h1>
+      </div>
+    </div>
     
     <div id="teste" class="container">
       <iframe src="https://www.google.com/maps/embed?pb=!4v1607543792235!6m8!1m7!1sCAoSLEFGMVFpcE9hMVQ0ZFdKdHljcmNzaC1saUQ3S2h6SUJreGR5Z29jdXQ1QTJS!2m2!1d-27.59074628776002!2d-48.61183190536636!3f17.68573548629111!4f-6.912306431014386!5f0.4000000000000002" width="1200" height="800" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -75,18 +90,17 @@
 
     <script>
     	
-      function aparecerTour(valor) {
-        if (valor === "Atendimento") {
-    			document.getElementById("teste").style.display = 'block';
-    	}
-    }
-      
-      function setarVariavel() {
-      	valor_dropdown = document.getElementById("dropdownSelector").value
-      		console.log(valor_dropdown)
-        	return valor_dropdown
+      function changeSelectOption(el) {
+        const optionsEl = document.querySelectorAll('.options-block > div')
+
+        // Remove a classe active de todos os que estiverem ativos
+        optionsEl.forEach(option => {
+          option.classList.remove('active')
+        })
+
+        // Adiciona a classe para a que ficou ativa
+        document.querySelector(`.options-block > div#${el.value}`).classList.add('active')
       }
-      let valor_dropdown = ""
       
 
     </script>
