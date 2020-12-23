@@ -6,42 +6,40 @@
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-      <style>
+    <style>
 
-      .dropdown-menu {
-        border: 2px solid #123D79;
-        box-sizing: border-box;
-        border-radius: 0px 25px 25px 18px;
-        font-family: Montserrat;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 18px;
-        color: #777777; 
-        line-height: 29px;
-      }
+        .dropdown-menu {
+            border: 2px solid #123D79;
+            box-sizing: border-box;
+            border-radius: 0px 25px 25px 18px;
+            font-family: Montserrat;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 18px;
+            color: #777777; 
+            line-height: 29px;
+        }
 			
         .options {
-         font-family: Montserrat;
-	 color: #123D79; 
+            font-family: Montserrat;
+	        color: #123D79; 
         }
         
         .options-block>div:not(.active) {
-  				display: none
-				}
+  			display: none
+		}
         
-      .container {
-        padding-top: 32px;
-      }
+        .container {
+            padding-top: 32px;
+        }
 
-      #teste {
-        display: none;
-      }
+        #teste {
+            display: none;
+        }
 
       </style>
 
     <title>Dropdown Tour</title>
-
-    <link rel="stylesheet" href="">
 
   </head>
 
@@ -51,55 +49,79 @@
 
     <select class="dropdown-menu" onchange='changeSelectOption(this)'>
 	    <optgroups class="options">
-		    <option selected value="atendimento">Atendimento</option> <!-- O que é? -->
-		    <option value="paramentacao">Paramentação</option> <!-- OK -->
-		    <option value="producao">Produção</option> <!-- O que é? -->
-		    <option value="controle-qualidade">Controle de Qualidade</option> <!-- OK -->
-		    <option value="sala-pesagem">Sala de Pesagem</option> <!-- OK -->
-		    <option value="encapsulacao">Encapsulação</option> <!-- Sala de Encapsulamento 2 ou 3? -->
-		    <option value="encapsulacao_i">Encapsulação I</option> <!-- Sala de Encapsulamento 2 ou 3? -->
-		    <option value="peso_medio">Peso Médio</option> <!-- OK -->
-		    <option value="cabines_pressao_negativa">Cabines de Pressão Negativa</option> <!-- São as Cabines Dedicadas? -->
-		    <option value="formas_farmaceuticas_liquidas">Formas Farmacêuticas Líquidas</option> <!-- É a sala de Manipulação de Líquidos? -->
-		    <option value="comprimidos_saches">Comprimidos e Sachês</option> <!-- OK -->
-		    <option value="sala_lavacao">Sala de Lavação</option> <!-- OK -->
-		    <option value="almoxarifado_materia_prima">Almoxarifado e Matéria Prima</option> <!-- OK -->
-		    <option value="controle">Controle</option> <!-- O que é? -->
-		    <option value="supervisao_farma">Supervisão Farmacêutica</option> <!-- O que é? -->
-		    <option value="entrega">Entrega</option> <!-- O que é? -->
+		    <option selected value="atendimento">Atendimento</option>
+		    <option value="paramentacao">Paramentação</option>
+		    <option value="producao">Produção</option>
+		    <option value="controle-qualidade">Controle de Qualidade</option>
+		    <option value="sala-pesagem">Sala de Pesagem</option>
+		    <option value="encapsulacao">Encapsulação</option>
+		    <option value="encapsulacao_i">Encapsulação I</option>
+		    <option value="peso_medio">Peso Médio</option>
+		    <option value="cabines_pressao_negativa">Cabines de Pressão Negativa</option>
+		    <option value="formas_farmaceuticas_liquidas">Formas Farmacêuticas Líquidas</option>
+		    <option value="comprimidos_saches">Comprimidos e Sachês</option>
+		    <option value="sala_lavacao">Sala de Lavação</option>
+		    <option value="almoxarifado_materia_prima">Almoxarifado e Matéria Prima</option>
+		    <option value="controle">Controle</option>
+		    <option value="supervisao_farma">Supervisão Farmacêutica</option>
+		    <option value="entrega">Entrega</option>
 	    </optgroups>
 	  </select>
 
     <div class="options-block">
-      <div id="atendimento" class="active">
-        <h1>atendimento</h1>
-      </div>
-      <div id="paramentacao">
-        <h1>paramentacao</h1>
-      </div>
-      <div id="producao">
-        <h1>producao</h1>
-      </div>
-      <div id="controle-qualidade">
-        <h1>controle-qualidade</h1>
-      </div>
+        <div id="atendimento" class="active">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608739748708!6m8!1m7!1sCAoSLEFGMVFpcE8wQklsaGVVbDFVZkdOaGpjOFJ5WTBmdVVud2s4NDRha3R2dHBD!2m2!1d-27.59072746421299!2d-48.611845207239!3f96.86!4f-8.659999999999997!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="paramentacao">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740332854!6m8!1m7!1sCAoSLEFGMVFpcE12RDZnZVctN1lsUnpRTkR2SWk5Rmw2OXFpejBtUjNvZDNaM3dQ!2m2!1d-27.59074598272374!2d-48.6117590727219!3f84.94!4f-5.430000000000007!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="producao">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608739928724!6m8!1m7!1sCAoSLEFGMVFpcE1TeTBNVXp1SkQyaFMwNVJlemlabzBGOVV4OTZrODlpSVZHYUlS!2m2!1d-27.59073772721084!2d-48.61173290379465!3f272.45!4f-2.3599999999999994!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="controle-qualidade">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740386090!6m8!1m7!1sCAoSLEFGMVFpcE9NMmpwYXFuY3pUS1ZvaE9vc19DYzdNQkVCdzF1dGRmMXctTnhH!2m2!1d-27.59070750720698!2d-48.61172244525152!3f323.4!4f-4.640000000000001!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="sala-pesagem">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740482729!6m8!1m7!1sCAoSLEFGMVFpcE1yeGMyblp0NzczWVBESUEtRGNObTlhdG9OOGxBYW83U1kyY1RL!2m2!1d-27.59070698725539!2d-48.61177553329179!3f135.7!4f-9.930000000000007!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="encapsulacao">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608739974036!6m8!1m7!1sCAoSLEFGMVFpcE5WeExMRFlFYXFackUtbDBjUG0takg3MmllMElDcVZKRGFHanZU!2m2!1d-27.59069522635127!2d-48.6117908579811!3f171.59!4f-11.650000000000006!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="encapsulacao_i">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740016380!6m8!1m7!1sCAoSLEFGMVFpcE1MemlWLXpMYURGTFpacEgzbWhNZnIwbnBUU2ZEbXJ6NnBxdTRY!2m2!1d-27.59071114310523!2d-48.61179681129298!3f289.02!4f-20.909999999999997!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="peso_medio">
+	        <iframe src="https://www.google.com/maps/embed?pb=!4v1608740422389!6m8!1m7!1sCAoSLEFGMVFpcFB4bUMxcDBETzY3SVItc3pMemxhdWRYaTY2TVREa1FFTVpYRWZX!2m2!1d-27.59071972540507!2d-48.61181389206718!3f307.57!4f-14.170000000000002!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="cabines_pressao_negativa">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740058916!6m8!1m7!1sCAoSLEFGMVFpcE5QNWJLd1dYdW1QZTk0Rm9ZX2FlQWR2Z2R1bzJkMktiYmZtTnBZ!2m2!1d-27.59069578817963!2d-48.6117757222031!3f50.34!4f4.719999999999999!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="formas_farmaceuticas_liquidas">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740097289!6m8!1m7!1sCAoSLEFGMVFpcE44SlU1NjY4YnRZX19WR0RWYkFELTdUekNsV0JJaXQwUTZRdm5S!2m2!1d-27.59068580634131!2d-48.61179257474907!3f354.29!4f-8.599999999999994!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="comprimidos_saches">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740530159!6m8!1m7!1sCAoSLEFGMVFpcE5GV3pET1dEWEU0ckNnVTQ5NFRZbFQwOG82TnR0MmtwWjhFUTlW!2m2!1d-27.59073260623311!2d-48.61181827181415!3f305.96!4f-15.909999999999997!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="sala_lavacao">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740576291!6m8!1m7!1sCAoSLEFGMVFpcFBMU0pRb25fZDZveGFEanNkOGdSdDN5aGhvZXF5NE5sX0x2b0hT!2m2!1d-27.59070343590441!2d-48.61184708524434!3f25.65!4f-9.340000000000003!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="almoxarifado_materia_prima">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740631560!6m8!1m7!1sCAoSLEFGMVFpcE1sTjFZbk9lcXE2bEFhdjJNdS1kZ3phWDhhWlhEWE54LWpqN0NM!2m2!1d-27.59068417064258!2d-48.61173765355958!3f117.74!4f-4.1299999999999955!5f0.9061143867615719" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="controle">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740123677!6m8!1m7!1sCAoSLEFGMVFpcE9NMmpwYXFuY3pUS1ZvaE9vc19DYzdNQkVCdzF1dGRmMXctTnhH!2m2!1d-27.59070750720698!2d-48.61172244525152!3f296.93!4f-11.909999999999997!5f1.854194412425771" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="supervisao_farma">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740159219!6m8!1m7!1sCAoSLEFGMVFpcE9hMVQ0ZFdKdHljcmNzaC1saUQ3S2h6SUJreGR5Z29jdXQ1QTJS!2m2!1d-27.59074628776002!2d-48.61183190536636!3f130.25!4f-19.28!5f2.684401643714234" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="entrega">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1608740186131!6m8!1m7!1sCAoSLEFGMVFpcE5Nb3FEWVNpZW5VWmVmeXdLQkVjbm5NU0Y0RXN5VWkwdXFNQmxH!2m2!1d-27.59068857487573!2d-48.61178173164765!3f261.28!4f-8.450000000000003!5f0.4000000000000002" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
     </div>
-    
-    <div id="teste" class="container">
-	    <!-- Paramentação --><iframe src="https://www.google.com/maps/embed?pb=!4v1607647232840!6m8!1m7!1sCAoSLEFGMVFpcE1TeTBNVXp1SkQyaFMwNVJlemlabzBGOVV4OTZrODlpSVZHYUlS!2m2!1d-27.59073772721084!2d-48.61173290379465!3f268.78384480669285!4f-7.900617199476429!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	    <!-- Controle de Qualidade --><iframe src="https://www.google.com/maps/embed?pb=!4v1607647376273!6m8!1m7!1sCAoSLEFGMVFpcE9NMmpwYXFuY3pUS1ZvaE9vc19DYzdNQkVCdzF1dGRmMXctTnhH!2m2!1d-27.59070750720698!2d-48.61172244525152!3f348.70815095164613!4f-14.086407341262259!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	    <!-- Sala de Pesagem --><iframe src="https://www.google.com/maps/embed?pb=!4v1607646922048!6m8!1m7!1sCAoSLEFGMVFpcE4yTWF3Qld5VFVydVB2ZUFKMFBrMEhtWmpLMjF6cWNrV3BUbklH!2m2!1d-27.59072472842451!2d-48.61177873242484!3f48.27757731027026!4f-9.399369600711424!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	    <!-- Peso Médio --><iframe src="https://www.google.com/maps/embed?pb=!4v1607647670760!6m8!1m7!1sCAoSLEFGMVFpcFB4bUMxcDBETzY3SVItc3pMemxhdWRYaTY2TVREa1FFTVpYRWZX!2m2!1d-27.59071972540507!2d-48.61181389206718!3f300!4f0!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	    <!-- Comprimidos e Sachês --><iframe src="https://www.google.com/maps/embed?pb=!4v1607646404504!6m8!1m7!1sCAoSLEFGMVFpcE5GV3pET1dEWEU0ckNnVTQ5NFRZbFQwOG82TnR0MmtwWjhFUTlW!2m2!1d-27.59073260623311!2d-48.61181827181415!3f80!4f0!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	    <!-- Sala de Lavação --><iframe src="https://www.google.com/maps/embed?pb=!4v1607646102200!6m8!1m7!1sCAoSLEFGMVFpcFBMU0pRb25fZDZveGFEanNkOGdSdDN5aGhvZXF5NE5sX0x2b0hT!2m2!1d-27.59070343590441!2d-48.61184708524434!3f352.3173743976544!4f-5.031004723590897!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	    <!-- Almoxarifado --><iframe src="https://www.google.com/maps/embed?pb=!4v1607646582017!6m8!1m7!1sCAoSLEFGMVFpcE1sTjFZbk9lcXE2bEFhdjJNdS1kZ3phWDhhWlhEWE54LWpqN0NM!2m2!1d-27.59068417064258!2d-48.61173765355958!3f65.75373292126974!4f-16.837880061783153!5f0.7820865974627469" width="1200" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	   
-	  </div>
-
 
     <script>
     	
-      function changeSelectOption(el) {
+    function changeSelectOption(el) {
         const optionsEl = document.querySelectorAll('.options-block > div')
 
         // Remove a classe active de todos os que estiverem ativos
@@ -109,7 +131,7 @@
 
         // Adiciona a classe para a que ficou ativa
         document.querySelector(`.options-block > div#${el.value}`).classList.add('active')
-      }
+    }
       
 
     </script>
